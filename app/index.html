@@ -1,15 +1,177 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru-RU">
 <head>
-	<title>Это сайт Виктора Пушенко</title>
-	<meta http-equiv="Content-type" content="text/html;charset=utf8" />
+	<meta http-equiv="X-UA-Compatible" content="text/html;charset=utf8;IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+	<title>Изучение фронтенд-разработки Виктор Пушенко</title>
+	<!-- CEO -->
+	<meta name="description" content="Тестовый сайт для изучения фронтенд-разработки Виктор Пушенко">
+	<meta name="keywords" content="Виктор Пушенко">
+	<meta name="author" content="Виктор Пушенко">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="bower_components\normalize.css">
 </head>
 <body>
-	<center>
-		<p>Это сайт Виктора Пушенко</p>
-		<p>Тут я изучаю фронтенд-разработку</p>
-		
-	</center>
+ 	<!--[if lt IE 7]>
+    	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+	<![endif]-->
+	<div class="wrapper">
+		<div class="container-page">
+			<!-- HEADER -->
+			<header class="page-header"> 
+				<div class="container-header">
+					<a href="" class="header-logo-link">
+						<img src="img/logo.png" class="logo-img" alt="logo">
+						<span class="header-logo-text">Сайт тестирование разработки</span>
+					</a>
+				
+					<ul class="social">
+						<li class="social-item">
+							<a href="https://vk.com/viktorpushenko" target="_blank" class="social-link">В контакте</a>
+						</li>
+						<li class="social-item">
+							<a href="https://twitter.com/viktorpushenko" target="_blank" class="social-link">Twitter</a>
+						</li>
+						<li class="social-item">
+							<a href="https://www.facebook.com/viktorpushenko" target="_blank" class="social-link">Facebook</a>
+						</li>
+						<li class="social-item">
+							<a href="https://github.com/ViktorPushenko" target="_blank" class="social-link">Github</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- /HEADER-->
+			<!-- MAIN CONTENT -->
+			<div class="container-main-content">
+				<!-- sidebar -->
+				<aside class="sidebar">
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="nav-li-active"><a href="/" class="nav-link">Обо мне</a></li>
+							<li class="nav-li-"><a href="/" class="nav-link">Мои работы</a><li>
+							<li class="nav-li-"><a href="/" class="nav-link">Связаться со мной</a></li>
+						</ul>
+					</nav>
+				
+					<address class="contacts">
+						<div class="contacts-header">
+							<span class="header-inner-text">Контакты</span>
+						</div>
+						<ul class="contacts-list">
+							<li class="contacts-list-item contacts-email">
+								<a href="mailto:viktorpushenko@ukr.net" class="contacts-link">
+									<span class="contacts-item-text">viktorpushenko@ukr.net</span>
+								</a>
+							</li>
+							<li class="contacts-list-item contacts-phone">
+								<a href="tel:+380674665762" class="contacts-link">
+									<span class="contacts-item-text">+38 (067) 466-57-62</span>
+								</a>
+							</li>
+							<li class="contacts-list-item contacts-skype">
+								<a href="skype:viktorpushenko?chat" class="contacts-link">
+									<span class="contacts-item-text">viktorpushenko</span>
+								</a>
+							</li>
+						</ul>
+					</address>
+				</aside>
+				<!-- /sidebar-->
+				<!-- variable-content -->
+				<div class="container-variable-content">
+					<!-- info-boxes -->
+					<div class="info-boxes">
+						<!-- info-box-main-information -->
+						<section class="info-box">
+							<h2 class="info-box-header-text">Основная информация</h2>
+							<div class="info-box-info">
+								<div class="image-wrap">
+									<div class="avatar-box">
+										<img src="img/avatar.png" class="avatar">
+									</div>
+								</div>
+								<div class="info-box-main-info">
+									<dl class="info-box-main-dl">
+										<dt class="info-box-main-dt">Меня зовут:</dt>
+										<dd class="info-box-main-dd">Пушенко Виктор</dd>
+										<dt class="info-box-main-dt">Мой возрат:</dt>
+										<dd class="info-box-main-dd">40 лет</dd>
+										<dt class="info-box-main-dt">Мой город:</dt>
+										<dd class="info-box-main-dd">Киев, Украина</dd>
+										<dt class="info-box-main-dt">Моя специализация:</dt>
+										<dd class="info-box-main-dd"><span class="upper">FRONTEND</span> разработчик</dd>
+										<dt class="info-box-main-dt">Ключевые навыки:</dt>
+										<dd class="info-box-main-dd">
+											<ul class="skills-ul">
+												<li class="skills">html</li>
+												<li class="skills">css</li>
+												<li class="skills">javascript</li>
+												<li class="skills">gulp</li>
+												<li class="skills">git</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+
+							</div>
+						</section>
+						<!-- /info-box-main-information-->
+						<!-- info-box-work-expirience -->
+						<section class="info-box">
+							<h2 class="info-box-header-text">Опыт работы</h2>
+							<div class="info-box-info">
+								<div class="info-box-secondary-info">
+									<dl class="info-box-secondary-dl">
+										<dt class="info-box-secondary-dt icon-suitcase">ABBYY Украина - программист 1С, руководитель проектов</dt>
+										<dd class="info-box-secondary-dd">Март 1999 - Июнь 2005</dd>
+										<dt class="info-box-secondary-dt icon-suitcase">Фрилансер - программист 1С, руководитель проектов</dt>
+										<dd class="info-box-secondary-dd">Июль 2005 - Июнь 2011</dd>
+										<dt class="info-box-secondary-dt icon-suitcase">Qoders - программист 1С, руководитель проектов, основатель</dt>
+										<dd class="info-box-secondary-dd">Июнь 2011 - сейчас</dd>
+									</dl>
+								</div>
+
+							</div>
+						</section>
+						<!-- /info-box-work-expirience -->
+						<!-- info-box-work-study -->
+						<div class="info-box">
+							<h2 class="info-box-header-text">Образование</h2>
+							<div class="info-box-info">
+								<div class="info-box-secondary-info">
+									<dl class="info-box-secondary-dl">
+										<dt class="info-box-secondary-dt icon-hat">НТУУ "КПИ", инженер-электрик</dt>
+										<dd class="info-box-secondary-dd">1992 - 1998</dd>
+										<dt class="info-box-secondary-dt icon-hat">КНЭУ, финансовый менеджер</dt>
+										<dd class="info-box-secondary-dd">1994 - 2003</dt>
+										<dt class="info-box-secondary-dt icon-doc">Loftschool</dt>
+										<dd class="info-box-secondary-dd">Июнь 2011 - сейчас</dd>
+									</dl>
+								</div>
+
+							</div>
+						</div>
+						<!-- /info-box-work-study-->
+					</div>
+					<!-- /info-boxes -->
+				</div>
+				<!-- /variable-content -->
+			</div>
+			<!-- /MAIN CONTENT-->
+		</div>
+	</div>
+	
+	<!-- footer-->
+	<div class="page-footer">
+		<div class="icon-lock">
+			<a href="" class="lock-inner-text">Войти</a>
+		</div>
+		<div class="footer-copyright">
+			<span class="footer-copyright-text">©Пушенко Виктор, 2015 год.</span>
+		</div>
+	</div>
+	<!-- footer-->
 </body>
 </html>
