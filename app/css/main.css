@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', verdana, sans-serif;
+	font-family: fira_sansregular;
 	font-size: 20px;
 	background: url(../img/background.jpg) repeat;
 	/*font: normal "Fira_sanslight" 1em;*/
@@ -10,7 +10,7 @@ body {
 
 }
 
-menu, ol, ul, dd {
+menu, ol, dd, h1, h2, h3 {
     padding: 0;
     margin: 0;
 }
@@ -233,41 +233,266 @@ ul {
 /* sprites end */
 
 /* sidebar */
-.nav {
+
+.sidebar {
 	width: 250px;
-	display: block;
 	float: left;
+	margin-right: 60px;
+}
+
+/* sidebar nav*/
+.nav {
 	background-color: #eff3f7;
 	border-radius: 4px;
 	overflow: hidden;
+	margin-bottom: 29px;
+}
 
+.nav-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .nav-li {
-	height: 49px;
-	font-size: 20px;
-	display: block;
-	padding-top: 22px;
-	padding-left: 18px;
-	margin: 0 11px 0 11px;
 	border-top: 2px solid #3ba8c0;
+	margin: 0 11px;
+	font-size: 21px;
+	line-height: 25px;
+	display: block;
+	width: 217px;
+	padding-left: 11px;
 }
 
 .nav-li-active, .nav-li:hover {
 	background-color: #3ba8c0;
-	margin: -2px;
-	border-top: none;
-	height: 51px;
-	padding-top: 24px;
-	padding-left: 31px;
+	margin: 0 0;
+	padding: 0 0;
+	border-bottom: 2px solid #3ba8c0;
+	margin-bottom: -2px;
+	font-size: 23px;
+	line-height: 25px;
+	padding-left: 22px;
+	width: 228px;
+}
+
+.nav-link {
+	text-decoration: none;
+	display: block;
+	padding: 22px 0px;
+}
+
+/* sidebar nav end*/
+
+/* sidebar contacts*/
+.contacts {
+	display: block;
+	background-color: lightgrey;
+	border-radius: 4px;
+	font-style: normal;
+	margin: 0 0 26px 0;
+	list-style: none;
+	width: 250px;
+	overflow: hidden;
+}
+.contacts-header {
+	font-size: 21px;
+	line-height: 21px;
+	padding-top: 10px;
+	padding-left: 20px;
+	background-color:#3ba8c0;
+	height: 31px;
+}
+
+.header-inner-text {
+	color: #fbfcfd;
+}
+
+.contacts-list  {
+	margin: 0;
+	padding: 0;
+}
+
+.contacts-list-item  {
+	font-size: 15px;
+	line-height: 40px;
+	height: 40px;
+	display: block;
+}
+
+.contacts-link {
+	text-decoration: none;
+	margin-left: 25px;
+	color: #fbfcfd;
+}
+
+.contacts-link:hover {
+	text-decoration: underline;
+}
+
+.contacts-email { /* have to move to sprite */
+	background: url(../img/email.png) no-repeat; 
+	background-color: #41b9d4;
+	background-position: 41px 10px;
+    padding-left: 47px; 
+}
+
+.contacts-phone { /* have to move to sprite */
+	background: url(../img/phone.png) no-repeat; 
+	background-color: #48cbe8;
+	background-position: 41px 9px;
+    padding-left: 47px; 
+}
+
+.contacts-skype { /* have to move to sprite */
+	background: url(../img/skype.png) no-repeat; 
+	background-color: #51daf8;
+	background-position: 41px 10px;
+    padding-left: 47px; 
+}
+
+/* sidebar contacts end*/
+
+/* sidebar end*/
+
+/* main section*/
+
+.container-variable-content {
+	display: block;
+	float: left;
 	
 }
 
-a.nav-link {
-	text-decoration: none;
+.infobox {
+	display: block;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 42px;
+	width: 650px;
+}
+
+.infobox-header {
+	border-bottom: 2px solid #3ba8c0;
+	margin-bottom: 17px;
+	display: block;
+	float: left;
+}
+
+.infobox-header-text {
+	color: #53b2c7;
+	font-size: 27px;
+	line-height: 67px;
+	padding: 0 21px;
+	font-style:  'fira_sansmedium';
+	
+}
+.infobox-info {
+	display: block;
+	clear: both;
+}
+.image-wrap {
+	padding-left: 55px;
+	padding-top: 18px;
+	float: left;
+	padding-right: 24px;
+	display: block;
+}
+
+.avatar-box {
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+
+	border-radius: 50%;
+	border: #3ba8c0 solid 5px;
+	display: block;
+
+}
+
+.infobox-label {
+	display: inline-block;
+	float: left;
+	font-family: 'fira_sansmedium';
+	padding-right: 17px;
+}
+
+.infobox-data {
+	display: inline-block;
+	float: left;
+	
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+}
+
+
+.infobox-main-info {
+	font-family: 'fira_sansmedium';
+	font-size: 17px;
+	display: block;
+	float: left;
 
 }
 
 
+.infobox-main-list {
+	padding: 0;
+	margin: 0;
+	line-height: 33px;
+}
 
-/* sidebar end*/
+.infobox-main-dd {
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+}
+
+
+.infobox-main-item {
+	
+}
+
+.skills {
+
+	
+	
+	
+  
+}
+
+.skills-list {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-width: 230px;
+	margin-bottom: 35px;
+
+
+}
+.skill-item{
+	display: inline-block;
+	
+	margin-right: 5px;
+	display: inline-block;
+	background:#3ba8c0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3ba8c0), color-stop(49%,#3ba8c0), color-stop(50%,#2e8ca2), color-stop(99%,#2e8ca2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3ba8c0 0%,#3ba8c0 49%,#2e8ca2 50%,#2e8ca2 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3ba8c0 0%,#3ba8c0 49%,#2e8ca2 50%,#2e8ca2 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3ba8c0 0%,#3ba8c0 49%,#2e8ca2 50%,#2e8ca2 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3ba8c0 0%,#3ba8c0 49%,#2e8ca2 50%,#2e8ca2 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
+	border-radius: 2px;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'proxima_nova_condensedSBd';
+	padding: 0 16px;
+	line-height: 19px;
+	vertical-align: middle;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+/* main section*/

@@ -10,8 +10,10 @@
 	<meta name="author" content="Виктор Пушенко">
 	<!-- CSS -->
 	
-	<link rel="stylesheet" href="bower_components\normalize.css">
+	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/fira/fira.css">
+	<link rel="stylesheet" href="fonts/proxima/proxima.css">
 	<!-- JS 
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	-->
@@ -59,10 +61,6 @@
 							<li class="nav-li nav-li-active"><a href="/" class="nav-link">Обо мне</a></li>
 							<li class="nav-li"><a href="/" class="nav-link">Мои работы</a></li>
 							<li class="nav-li"><a href="/" class="nav-link">Связаться со мной</a></li>
-							<li class="nav-li"><a href="/" class="nav-link">Связаться со мной</a></li>
-							<li class="nav-li"><a href="/" class="nav-link">Связаться со мной</a></li>
-							<li class="nav-li"><a href="/" class="nav-link">Связаться со мной</a></li>
-							<li class="nav-li"><a href="/" class="nav-link">Связаться со мной</a></li>
 						</ul>
 					</nav>
 				
@@ -73,17 +71,17 @@
 						<ul class="contacts-list">
 							<li class="contacts-list-item contacts-email">
 								<a href="mailto:viktorpushenko@ukr.net" class="contacts-link">
-									<span class="contacts-item-text">viktorpushenko@ukr.net</span>
+									<span class="contacts-item-text icon-email">viktorpushenko@ukr.net</span>
 								</a>
 							</li>
 							<li class="contacts-list-item contacts-phone">
 								<a href="tel:+380674665762" class="contacts-link">
-									<span class="contacts-item-text">+38 (067) 466-57-62</span>
+									<span class="contacts-item-text  icon-phone">+38 (067) 466-57-62</span>
 								</a>
 							</li>
 							<li class="contacts-list-item contacts-skype">
 								<a href="skype:viktorpushenko?chat" class="contacts-link">
-									<span class="contacts-item-text">viktorpushenko</span>
+									<span class="contacts-item-text icon-skype">viktorpushenko</span>
 								</a>
 							</li>
 						</ul>
@@ -93,63 +91,87 @@
 				<!-- variable-content -->
 				<div class="container-variable-content">
 					<!-- info-boxes -->
-					<div class="info-boxes">
+					<div class="infoboxes">
 						<!-- info-box-main-information -->
-						<section class="info-box">
-							<h2 class="info-box-header-text">Основная информация</h2>
-							<div class="info-box-info">
+						<section class="infobox">
+							<div class="infobox-header">
+								<h2><span class="infobox-header-text">Основная информация</span></h2>	
+							</div>
+							<div class="infobox-info clearfix">
 								<div class="image-wrap">
 									<div class="avatar-box">
 										<img src="img/avatar.png" class="avatar">
 									</div>
 								</div>
-								<div class="info-box-main-info">
-									<dl class="info-box-main-dl">
-										<dt class="info-box-main-dt">Меня зовут:</dt>
-										<dd class="info-box-main-dd">Пушенко Виктор</dd>
-										<dt class="info-box-main-dt">Мой возрат:</dt>
-										<dd class="info-box-main-dd">40 лет</dd>
-										<dt class="info-box-main-dt">Мой город:</dt>
-										<dd class="info-box-main-dd">Киев, Украина</dd>
-										<dt class="info-box-main-dt">Моя специализация:</dt>
-										<dd class="info-box-main-dd"><span class="upper">FRONTEND</span> разработчик</dd>
-										<dt class="info-box-main-dt">Ключевые навыки:</dt>
-										<dd class="info-box-main-dd">
-											<ul class="skills-ul">
-												<li class="skills">html</li>
-												<li class="skills">css</li>
-												<li class="skills">javascript</li>
-												<li class="skills">gulp</li>
-												<li class="skills">git</li>
-											</ul>
-										</dd>
-									</dl>
-								</div>
-
+								
+								<div class="infobox-main-info">
+                                    <ul class="infobox-main-list">
+                                        <li class="infobox-main-item clearfix">
+                                            <div class="infobox-label">Меня зовут:</div>
+                                            <div class="infobox-data">Пушенко Виктор</div>
+                                        </li>
+                                        <li class="infobox-main-item clearfix">
+                                            <div class="infobox-label">Мой возраст:</div>
+                                            <div class="infobox-data">40 лет</div>
+                                        </li>
+                                        <li class="infobox-main-item clearfix">
+                                            <div class="infobox-label">Мой город:</div>
+                                            <div class="infobox-data">Киев, Украина</div>
+                                        </li>
+                                        <li class="infobox-main-item clearfix">
+                                            <div class="infobox-label">Моя специализация:</div>
+                                            <div class="infobox-data">FRONTEND разработчик</div>
+                                        </li>
+                                        <li class="infobox-main-item clearfix">
+                                            <div class="infobox-label">Ключевые навыки:</div>
+                                            <div class="infobox-data skills">
+                                                <ul class="skills-list">
+                                                    <li class="skill-item">html</li>
+                                                    <li class="skill-item clearfix">css</li>
+                                                    <li class="skill-item">javascript</li>
+                                                    <li class="skill-item">gulp</li>
+                                                    <li class="skill-item">git</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
 							</div>
 						</section>
 						<!-- /info-box-main-information-->
 						<!-- info-box-work-expirience -->
-						<section class="info-box">
-							<h2 class="info-box-header-text">Опыт работы</h2>
-							<div class="info-box-info">
-								<div class="info-box-secondary-info">
-									<dl class="info-box-secondary-dl">
-										<dt class="info-box-secondary-dt icon-suitcase">ABBYY Украина - программист 1С, руководитель проектов</dt>
-										<dd class="info-box-secondary-dd">Март 1999 - Июнь 2005</dd>
-										<dt class="info-box-secondary-dt icon-suitcase">Фрилансер - программист 1С, руководитель проектов</dt>
-										<dd class="info-box-secondary-dd">Июль 2005 - Июнь 2011</dd>
-										<dt class="info-box-secondary-dt icon-suitcase">Qoders - программист 1С, руководитель проектов, основатель</dt>
-										<dd class="info-box-secondary-dd">Июнь 2011 - сейчас</dd>
-									</dl>
+						<section class="infobox">
+							<div class="infobox-header">
+								<h2 class="infobox-header-text">Опыт работы</h2>
+							</div>
+							<div class="infobox-info clearfix">
+								<div class="work clearfix">
+									<div class="sprite sprite-suitcase">
+										<div class="work-place">ABBYY Украина - программист 1С, руководитель проектов</div>
+										<div class="work-period">Март 1999 - Июнь 2005</div>
+									</div>
 								</div>
+
+								<!-- <div class="infobox-secondary-info">
+									ul.unfobox-
+									<dl class="infobox-secondary-dl">
+										<dt class="infobox-secondary-dt icon-suitcase">ABBYY Украина - программист 1С, руководитель проектов</dt>
+										<dd class="infobox-secondary-dd">Март 1999 - Июнь 2005</dd>
+										<dt class="infobox-secondary-dt icon-suitcase">Фрилансер - программист 1С, руководитель проектов</dt>
+										<dd class="infobox-secondary-dd">Июль 2005 - Июнь 2011</dd>
+										<dt class="infobox-secondary-dt icon-suitcase">Qoders - программист 1С, руководитель проектов, основатель</dt>
+										<dd class="infobox-secondary-dd">Июнь 2011 - сейчас</dd>
+									</dl>
+								</div> -->
 
 							</div>
 						</section>
 						<!-- /info-box-work-expirience -->
 						<!-- info-box-work-study -->
 						<div class="info-box">
-							<h2 class="info-box-header-text">Образование</h2>
+							<div class="info-box-header-study">
+								<h2 class="info-box-header-text">Образование</h2>
+							</div>
 							<div class="info-box-info">
 								<div class="info-box-secondary-info">
 									<dl class="info-box-secondary-dl">
