@@ -205,6 +205,7 @@ ul {
     width: 36px;
     height: 34px;
     background-position: -36px -182px;
+    
 }
 
 .sprite-tw {
@@ -367,8 +368,9 @@ ul {
 	display: block;
 	background-color: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 42px;
+	margin-bottom: 27px;
 	width: 650px;
+	padding-bottom: 34px;
 }
 
 .infobox-header {
@@ -452,9 +454,6 @@ ul {
 
 .skills {
 
-	
-	
-	
   
 }
 
@@ -465,7 +464,7 @@ ul {
 	padding: 0;
 	list-style: none;
 	max-width: 230px;
-	margin-bottom: 35px;
+	
 
 
 }
@@ -495,4 +494,49 @@ ul {
 	margin-bottom: 5px;
 }
 
+.icon {
+	height: 51px;
+	margin-left: 58px;
+	margin-right: 15px;
+}
+
+.icon-work {
+	position: relative;
+	top: 10px;
+}
+
+.left {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.work-list {
+	margin-top: 10px;
+}
+
+.work-item {
+	margin-left: 58px;
+	margin-bottom: 22px;
+	background: url(../img/suitcase.png)  no-repeat;
+}
+.work-place {
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	display: block;
+	padding-left: 70px;
+	line-height: 1;
+	padding-bottom: 4px;
+	
+	
+}
+.work-period {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	line-height: 1;
+	display: block;
+	padding-left: 70px;
+	
+}
 /* main section*/
