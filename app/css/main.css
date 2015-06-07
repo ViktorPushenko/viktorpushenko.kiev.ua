@@ -49,7 +49,6 @@ ul {
 
 .container-page {
 	min-width: 960px;
-	max-width: 1400px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -118,7 +117,7 @@ ul {
 .social-item {
 	display: inline-block;
 	text-indent: -9999px;
-	margin-left: 17px;
+	margin-left: 19px;
 }
 
 
@@ -521,22 +520,22 @@ ul {
 	margin-bottom: 22px;
 	background: url(../img/suitcase.png)  no-repeat;
 }
+
 .work-place {
+
 	font-family: 'fira_sansbook';
 	font-size: 17px;
 	display: block;
 	padding-left: 70px;
 	line-height: 1;
 	padding-bottom: 4px;
-	
-	
 }
+
 .work-period {
 	font-family: 'fira_sanslight';
 	font-size: 15px;
 	line-height: 1;
 	display: block;
 	padding-left: 70px;
-	
 }
 /* main section*/
