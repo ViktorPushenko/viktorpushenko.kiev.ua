@@ -562,7 +562,35 @@ ul {
 .page-footer{
 	height: 80px;
 	margin-top: -80px;
-	font-family: 'fira_sanslight';	
+
+}
+
+.footer-content {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.lock-inner-text {
+	position: absolute;
+	left: -9999px;
+}
+
+.footer-copyright {
+	display: block;
+	float: left;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+}
+
+.icon-lock {
+	position: relative;
+	top: 18px;
+	margin: 0 30px;
+}
+
+.footer-copyright {
+	text-align: center;
+	margin: 0 140px;
+	width: 880px;
 }
 
 /* прибьём футер к низу - конец*/
