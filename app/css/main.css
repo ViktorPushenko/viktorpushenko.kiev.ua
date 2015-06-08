@@ -138,9 +138,10 @@ ul {
 	display: block;
 	width: 217px;
 	padding-left: 11px;
+	
 }
 
-.nav-li-active, .nav-li:hover {
+.nav-li-active {
 	background-color: #3ba8c0;
 	margin: 0 0;
 	padding: 0 0;
@@ -150,23 +151,20 @@ ul {
 	line-height: 25px;
 	padding-left: 22px;
 	width: 228px;
+	color: #ffffff;
 }
 
 .nav-link {
 	text-decoration: none;
 	display: block;
 	padding: 22px 0px;
-}
-
-.nav-link-contacts {
 	color: #959aa8;
 }
-
-.nav-link-works {
+.nav-link:hover {
 	color: #3ba8c0;
 }
 
-.nav-link-active {
+.nav-link-active, .nav-link-active:hover {
 	color: #ffffff;
 }
 

@@ -35,7 +35,7 @@
     background-position: -390px -5px;
 }
 
-.sprite-fb-active {
+.sprite-fb:hover {
     width: 47px;
     height: 47px;
     background-position: -323px -62px;
@@ -47,7 +47,7 @@
     background-position: -380px -62px;
 }
 
-.sprite-gh-active {
+.sprite-gh:hover {
     width: 47px;
     height: 47px;
     background-position: -323px -119px;
@@ -90,7 +90,7 @@
     background-position: -82px -182px;
 }
 
-.sprite-tw-active {
+.sprite-tw:hover {
     width: 47px;
     height: 47px;
     background-position: -139px -182px;
@@ -102,7 +102,7 @@
     background-position: -196px -182px;
 }
 
-.sprite-vk-active {
+.sprite-vk:hover {
     width: 47px;
     height: 47px;
     background-position: -253px -182px;
