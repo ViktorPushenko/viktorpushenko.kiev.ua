@@ -1,0 +1,16 @@
+.infobox-contacts-header {
+	height: 121px;
+	background-color: #48cbe8;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 17px solid #67dffa;
+}
+
+.infobox-contacts-header-text {
+	font-family: 'fira_sansbook';
+	font-weight: normal;
+	font-size: 27px;
+	line-height: 1;
+	padding-top: 47px;
+}

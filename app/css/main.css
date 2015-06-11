@@ -242,7 +242,67 @@ ul {
 
 /* sidebar end*/
 
+/* infoboxes */
 
+.container-variable-content {
+	display: block;
+	float: left;
+	
+}
+
+.infobox {
+	display: block;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 27px;
+	width: 650px;
+	padding-bottom: 34px;
+	overflow: hidden;
+}
+
+.infobox-header {
+	border-bottom: 2px solid #3ba8c0;
+	margin-bottom: 17px;
+	display: block;
+	float: left;
+}
+
+.infobox-header-text {
+	color: #53b2c7;
+	font-size: 27px;
+	line-height: 67px;
+	padding: 0 21px;
+	font-style:  'fira_sansmedium';
+	
+}
+.infobox-info {
+	display: block;
+	clear: both;
+}
+
+.infobox-main-info {
+	font-family: 'fira_sansmedium';
+	font-size: 17px;
+	display: block;
+	float: left;
+
+}
+.left {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.right {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* /infoboxes */
 
 
 /* footer */

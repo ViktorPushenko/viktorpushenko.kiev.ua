@@ -1,0 +1,22 @@
+.project-image-mini-warp {
+	width: 181px;
+	height: 127px;
+	border-radius: 3px;
+	border: solid 2px #3ba8c0;
+	overflow: hidden;
+}
+
+.projects {
+	padding: 20px;
+}
+
+.project {
+	width: 131px;
+}
+
+.project-address {
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	color: #3ba8c0;
+	display: block;
+}
