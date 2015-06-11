@@ -1,17 +1,23 @@
 .project-image-mini-warp {
+	
+	
+}
+
+.project-image-mini {
 	width: 181px;
 	height: 127px;
 	border-radius: 3px;
 	border: solid 2px #3ba8c0;
 	overflow: hidden;
+	display: block;
 }
-
 .projects {
 	padding: 20px;
 }
 
 .project {
-	width: 131px;
+	width: 185px;
+	float: left;
 }
 
 .project-address {
@@ -19,4 +25,13 @@
 	font-size: 13px;
 	color: #3ba8c0;
 	display: block;
+	text-align: center;
+}
+
+.project-description {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	color: #4a545d;
+	display: block;
+	text-align: center;
 }
