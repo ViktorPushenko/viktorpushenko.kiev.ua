@@ -348,7 +348,9 @@ ul {
 }
 .lock-inner-text {
 	position: absolute;
-	left: -9999px;
+	text-indent: -9999px;
+	display: block;
+	margin-left: 18px;
 }
 
 .footer-copyright {
