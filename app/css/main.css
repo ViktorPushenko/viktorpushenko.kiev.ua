@@ -10,6 +10,7 @@ body {
 	color: #4a545d;
 	margin: 0;
 	padding: 0;
+	overflow-y:scroll;
 
 }
 
@@ -138,7 +139,10 @@ ul {
 	display: block;
 	width: 217px;
 	padding-left: 11px;
-	
+}
+
+.nav-li-no-border-top {
+	border-top: 2px solid #eff3f7;
 }
 
 .nav-li-active {

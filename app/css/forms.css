@@ -73,16 +73,16 @@
 
 .btn {
 	border-radius: 5px;
-	
   	height: 33px;
   	background-color: #849db5;
   	border: none;
   	border:solid #687b8f;
 	border-width: 0 0 3px 0;
 	color: #ffffff;
-	
 	padding-left: 19px;
 	padding-right: 19px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
 }
 
 .btn-main {

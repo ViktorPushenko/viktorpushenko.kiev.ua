@@ -5,23 +5,21 @@
 }
 
 .container-login {
-
-  	height: 100%;
+	height: 100%;
   	width: 100%;
-  	
-  	margin: auto;
+   	margin: auto;
   	position: absolute;
   	bottom: 275px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
+  	left: 0;
+  	margin: auto;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
 }
 
 .center{
   background: #eff3f7;
-  height: 490px;
+  height: 483px;
   width: 590px;
   bottom: 0;
   left: 0;
@@ -32,20 +30,75 @@
   border-radius: 4px;
   box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
   overflow: hidden;
-
 }
 
 .center-header {
- 
   background-color: #48cbe8;
-  
   width: 100%;
-  height: 106px;
+  height: 91px;
+  border-bottom: 16px solid #67dffa;
 
-  border-bottom: 15px solid #67dffa;
-  
-
-
+  margin-bottom: 16px;
 }
 
+.centered-text {
+	display: block;
+	text-align: center;
+	font-family: 'fira_sansbook';
+  	font-size: 40px;
+  	color: #ffffff;
+  	padding-top: 16px;
+}
+
+.input{
+	font-size: 17px;
+	padding: 17px 12px;
+	height: 26px;
+	border: 1px solid #f97e76;
+	background-color: #fdd5d2;
+	border-radius: 4px;
+	width: 398px;
+}
+.btn {
+	font-size: 31px;
+	height: 53px;
+	margin-top: 19px;
+	padding: 0 70px;
+}
+.label{
+	font-size: 35px;
+	font-family: 'fira_sanslight';
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+.form-group {
+	margin-bottom: 12px;
+	display: block;
+	text-align: center;
+}
+
+.form-wrapper {
+	
+}
+
+.btn-login {
+	border-radius: 5px;
+  	height: 55px;
+  	background-color: #48cbe8;
+	border:solid #3ba8c0;
+	border-width: 0 0 6px 0;
+	color: #ffffff;
+	padding-left: 19px;
+	padding-right: 19px;
+	width: 226px;
+	padding-top: 5px;
+	font-family: 'fira_sansbook';
+	font-size: 36px;
+}
+
+.btn-login:hover {
+	border-bottom: none;
 }
