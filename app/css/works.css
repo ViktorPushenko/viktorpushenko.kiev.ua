@@ -28,7 +28,9 @@
 }
 
 .projects {
-	padding: 10px 20px 0px 20px;
+	padding: 10px 0px 0px 20px;
+	display: block;
+
 }
 
 .project {
@@ -39,6 +41,10 @@
 	margin-bottom: 42px;
 }
 
+.project-last {
+	margin-right: 0;
+	
+}
 
 .project-address {
 	font-family: 'fira_sanslight_italic';
