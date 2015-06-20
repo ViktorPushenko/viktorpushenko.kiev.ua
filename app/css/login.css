@@ -94,11 +94,12 @@
 	padding-left: 19px;
 	padding-right: 19px;
 	width: 226px;
-	padding-top: 5px;
+	padding-top: 0;
 	font-family: 'fira_sansbook';
 	font-size: 36px;
 }
 
 .btn-login:hover {
+	padding-top: 3px;
 	border-bottom: none;
 }
