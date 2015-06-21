@@ -203,8 +203,45 @@
 
 /* Прячем модальное окно */
 #new-project-popup { 
-	display:none; 
+	display:none;
+	position:fixed;
+    
+    z-index: 5;
+
+    top: 50%;
+	left: 50%;
+	margin-top: -245px;
+	margin-left: -182px;
 }
 
 
+#parent_popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
+#overlay {
+	z-index: 3;
+	position: fixed;
+	background-color: grey;
+	opacity: 0.6;
+	width: 100%; 
+	height: 100%;
+	top: 0; 
+	left: 0;
+	cursor: pointer;
+}
+
+.not-visible {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
