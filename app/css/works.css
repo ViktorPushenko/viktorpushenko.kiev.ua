@@ -49,38 +49,6 @@
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
-
-/*.work_title {
-  position: relative;
-  display: inline-block;
-  padding-left: 4px;
-  padding-right: 4px;
-  font-family: 'fira_sansbook';
-  font-size: 12px;
-  line-height: 17px;
-  color: #FFF;
-  border: 2px solid #FFF;
-  border-radius: 4px;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-}*/
-
-/*.projects-item:hover .project-img{
-	
-}
-
-.projects-item:hover .hover-img{
-	background-color: rgb( 1, 108, 164);
-}*/
-
-.new-project-img {
-	display: block;
-	margin-top: 33px;
-	margin-left: 40px;
-}
-
 .projects {
 	padding: 10px 0 0 5px;
 	display: block;
@@ -125,41 +93,118 @@
 }
 
 .project-img {
-			width: 100%;
-			height: 129px;
-			border-radius: 4px;
-			margin-bottom: 3px;
-		}
+	width: 100%;
+	height: 129px;
+	border-radius: 4px;
+	margin-bottom: 3px;
+}
 
-		.hover-img {
-			position: absolute;
-			width: 100%;
-			top: 55px;
-			text-align: center;
-			transform: scale(0);
-			-webkit-transform: scale(0);
-			transition: all 0.5s ease-in-out;
-			-webkit-transition: all 0.5s ease-in-out;
-		}
+.hover-img {
+	position: absolute;
+	width: 100%;
+	top: 55px;
+	text-align: center;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
 
-		.link {
-			font-size: 12px;
-			border: solid 3px #eff3f7;
-			color: #eff3f7;
-			text-decoration: none;
-			border-radius: 5px;
-			padding: 0 4px;
-		}
+.link {
+	font-size: 12px;
+	border: solid 3px #eff3f7;
+	color: #eff3f7;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 0 4px;
+}
 
-		.project:hover .hover-img {	
-			transform: scale(1);
-			-webkit-transform: scale(1);
-		}
+.project:hover .hover-img {	
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
 
-		.project:hover .project-img {
-		  background-color: rgb( 1, 108, 164);
-		}
+.project:hover .project-img {
+  background-color: rgb( 1, 108, 164);
+}
 
-		.project:hover .project-img img {
-			opacity: .20;
-		}
+.project:hover .project-img img {
+	opacity: .20;
+}
+
+/* _____________ new project _________ */
+.new-project-img {
+	display: block;
+	margin-top: 33px;
+	margin-left: 40px;
+}
+
+.new-project:hover .new-project-img {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+	
+	-webkit-transition:  all 0.5s ease-in-outall;;
+	-o-transition: all 0.5s ease-in-outall;
+	transition: all 0.5s ease-in-outall;
+
+}
+/* _____________ Добавить проект _________ */
+.add-new-item{	
+	border: dashed 1px #3ba8c0;
+	border-radius: 4px;
+	height: 128px;
+	text-decoration: none;
+}
+.add-new-item .add-new-link{
+	background: url('../img/add-new.png') center 33px no-repeat; 
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #3ba8c0;
+	font-size: 13px;
+}
+.add-new-item .add-new-text{
+	position: absolute;
+	padding-top: 76px;
+	text-align: center;
+	width: 100%;
+}
+.add-new-item .add-new-link:hover{
+	text-decoration: underline;
+}
+
+
+
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(200%); opacity: 0;}
+    to { -webkit-transform: translateY(0%) scale(1); opacity: 1;}
+}
+
+@-moz-keyframes moveFromBottom {
+    from { -moz-transform: translateY(200%); opacity: 0;}
+    to { -moz-transform: translateY(0%); opacity: 1;}
+}
+@-ms-keyframes moveFromBottom {
+    from { -ms-transform: translateY(200%); opacity: 0;}
+    to { -ms-transform: translateY(0%); opacity: 1;}
+}
+@-o-keyframes moveFromBottom {
+	from { -o-transform: translateY(200%); opacity: 0;}
+    to { -o-transform: translateY(0%); opacity: 1;}
+}
+@keyframes moveFromBottom {
+	from { transform: translateY(200%); opacity: 0;}
+    to { transform: translateY(0%); opacity: 1;}
+}
+/* _____________ // Добавить проект _________ */
+
+
+/* Прячем модальное окно */
+#new-project-popup { 
+	display:none; 
+}
+
+
+

@@ -156,8 +156,8 @@
 										</div>
 									</div>
 									<div class="project">
-										<div class="project-image-mini-warp">
-											<a href="http://www.google.com" target="_blank" class="project-ref">
+										<div>
+											<a href="#" target="_blank" class="project-ref"  id="add-new-item">
 												<picture class="project-image-new new-project">
 													<img src="img/newproject-2.png" class="new-project-img">
 												</picture>
@@ -180,6 +180,7 @@
 			<!-- /MAIN CONTENT-->
 		</div>
 	</div>
+
 	<!-- footer-->
 	<div class="page-footer clearfix">
 		<div class="footer-content">
@@ -192,5 +193,61 @@
 		</div>
 	</div>
 	<!-- footer-->
+
+	<!-- МОДАЛЬНОЕ ОКНО -->
+    <!-- Добавить новый проект -->       
+    <div id="new-project-popup">
+      <div class="modal-wrapper">
+        <div class="modal-header">
+          <button type="button" class="b-close"></button>
+          <h4 class="modal-title">Добавление проекта</h4>
+        </div>
+        <div class="modal-body">
+          <form id="add-new-project" class="form" role="form">  
+          <!-- Вывод сообщений с сервера -->
+          <div class="server-mes error-mes"></div>
+          <div class="server-mes success-mes"></div>
+          <!-- Название проекта -->
+          <div class="form-group">
+            <label for="projectName" class="label">Название проекта</label>
+            <input type="text" name="projectName" class="input" id="projectName" placeholder="Введите название" qtip-content="Вы не ввели название">
+          </div>      
+          <!-- Картинка проекта -->
+          <div class="form-group">
+            <div class="fileupload-wrapper" id="uploadfile">
+            <span class="label">Картинка проекта</span>
+            <label class="fileupload-lable">
+              <input id="fileupload" class="fileupload" type="file" name="files[]">
+              <input id="fileurl" type="hidden" name="fileurl">
+            </label>
+            <input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
+            </div>
+          </div>
+          <!-- URL проекта -->
+          <div class="form-group">
+            <label for="projectUrl" class="label">URL проекта</label>
+            <input type="text" name="projectUrl" class="input" id="projectUrl" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку">
+          </div>
+          <!-- Описание -->
+          <div class="form-group">
+            <label for="projectDesc" class="label">Описание</label>
+            <textarea name="text" id="projectDesc" class="textarea" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"></textarea>
+          </div>
+          <!-- Кнопка "Отправить" -->
+            <div class="btn-wrapp">
+              <button type="submit" class="btn">Добавить</button>
+            </div>      
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- / МОДАЛЬНОЕ ОКНО -->
+    <!-- / Добавить новый проект --> 
+
+	<!-- vendor JS -->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    
+    <!-- JS -->
+	<script src="js/add_project.js"></script>
 </body>
 </html>
