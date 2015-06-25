@@ -17,13 +17,14 @@ var addProject = (function (){
 	popUpShow = function(ev){
 		console.log('Отключаем дефолт у добавить проект');
 		ev.preventDefault();
-
+		console.log($("#new-project-popup"));
 		console.log('Выводим подложку');
 		$("#overlay").removeClass('not-visible').addClass('visible');
 		
 		console.log('Показываем попап');
+		console.log($("#new-project-popup"));
 	    $("#new-project-popup").show();
-		
+		console.log($("#new-project-popup"));
 	},
 
 	popUpHide = function(ev){
