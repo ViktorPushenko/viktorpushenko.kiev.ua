@@ -32,11 +32,15 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 12px;
+  
   width: 100%;
   /*padding: 0 12px 0 12px;*/
   background-color: #fff;
   padding: 12px;
+
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  color: #48cbe8;
 }
 
 /* placeholder */
