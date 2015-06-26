@@ -6,13 +6,16 @@
 }
 
 .input {
-	width: 190px;
+	display: block;
+	width: 100%;
 	border-radius: 4px;
 	border: 1px solid #48cbe8;
-	height: 37px;
-	margin-right: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
+	height: 41px;
+	/*margin-right: 18px;*/
+	/*padding-left: 12px;
+	padding-right: 12px;*/
+	outline: none;
+	line-height: normal;
 }
 
 .textarea {
@@ -21,41 +24,82 @@
 	border: 1px solid #48cbe8;
 	
 	margin-right: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
 }
 
+.input, .textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  width: 100%;
+  /*padding: 0 12px 0 12px;*/
+  background-color: #fff;
+  padding: 12px;
+}
 
 /* placeholder */
 *::-webkit-input-placeholder {
     color: #48cbe8;
     font-size: 13px;
-    padding: 5px;
+    /*padding: 5px;*/
+    /*padding-right: 12px;
+    padding-left: 12px;*/
 }
 *:-moz-placeholder {
     /* FF 4-18 */
     color: #48cbe8;
     font-size: 13px;
-    padding: 5px
+    /*padding-right: 12px;
+    padding-left: 12px;*/
+    /*padding: 5px*/
 }
 *::-moz-placeholder {
     /* FF 19+ */
     color: #48cbe8;
     font-size: 13px;
-    padding: 5px
+    /*padding-right: 12px;
+    padding-left: 12px;*/
+    /*padding: 5px*/
 }
 *:-ms-input-placeholder {
     /* IE 10+ */
     color: #48cbe8;
     font-size: 13px;
-    padding: 5px
+   /* padding-right: 12px;
+    padding-left: 12px;*/
+    /*padding: 5px*/
 }
 
 .input-last {
 	margin-right: 0;
 }
 .form-wrapper {
-	padding: 43px 100px;
+	/*padding: 43px 100px;*/
+	margin: 0 122px;
+}
+
+.form-col {
+	width: 192px;
+	display: inline-block;
+}
+.form-col-1-2 {
+	width: 192px;
+	float: left;
+}
+
+.form-col-2-2 {
+	width: 192px;
+	float: right;
+}
+
+.contact-me__form {
+  margin: 0 122px;
+}
+
+.form-group {
+  margin-bottom: 12px;
 }
 
 .form-line {
@@ -63,9 +107,10 @@
 	margin-bottom: 12px;
 }
 .message {
-	width: 396px;
+	width: 100%;
 	margin-right: 0;
 	height: 177px;
+	margin-bottom: 12px;
 }
 .form-text {
 	font-family: 'fira_sanslight';
@@ -77,13 +122,16 @@
 }
 
 .captcha {
-	width: 190px;
+	width: 100%;
 	border-radius: 4px;
 	border: 1px solid #48cbe8;
 	height: 75px;
 	margin-right: 12px;`
 }
 
+.captcha-container {
+	margin-bottom: 21px;
+}
 .btn {
 	border-radius: 5px;
   	height: 33px;
@@ -110,4 +158,33 @@
 
 .button-group {
 	padding-top: 9px;
+}
+
+.fileupload-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.fileupload {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  overflow: hidden;
+}
+
+.fileupload-label {
+  display: block;
+  width: 52px;
+  height: 41px;
+  position: absolute;
+  right: 0;
+  background: url(../img/file.png) 10px 7px no-repeat;
+  background-color: #48cbe8;
+  border-radius: 0 4px 4px 0;
+
 }

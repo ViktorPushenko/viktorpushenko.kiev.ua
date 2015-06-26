@@ -154,7 +154,9 @@
 #new-project-popup { 
 	display:none;
 	position:fixed;
-    
+    font-family: 'fira_sansbook';
+    font-size: 18px;
+    color: #58697;
 	top: 50%;
 	left: 50%;
 	margin-top: -245px;
@@ -193,3 +195,4 @@
 .visible {
 	display: block;
 }
+
