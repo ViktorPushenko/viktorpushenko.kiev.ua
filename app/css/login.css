@@ -9,27 +9,30 @@
   	width: 100%;
    	margin: auto;
   	position: absolute;
-  	bottom: 275px;
+  	/*bottom: 275px;*/
+  	bottom: 0;
   	left: 0;
   	margin: auto;
   	position: absolute;
   	top: 0;
   	right: 0;
+    overflow: auto;
 }
 
 .center{
   background: #eff3f7;
   height: 483px;
   width: 590px;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
+  
+  
   border-radius: 4px;
   box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
   overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -281px 0 0 -295px;
 }
 
 .center-header {
