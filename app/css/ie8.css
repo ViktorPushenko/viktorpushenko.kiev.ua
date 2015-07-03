@@ -1,0 +1,6 @@
+.projects-item .zoom-wrapper{
+	display: none;
+}
+.projects-item:hover .zoom-wrapper {	
+	display: block;
+}
