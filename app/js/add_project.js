@@ -3,38 +3,38 @@ var addProject = (function (){
 	var 
 	
 	init = function(){
-		console.log('Инициализация модуля addProject');
+		/*console.log('Инициализация модуля addProject');*/
 		setUpListners();
 	},
 	
 	setUpListners = function (){
-		console.log('Настройка слушателей');
+		/*console.log('Настройка слушателей');*/
 		$('#add-new-item').on('click', popUpShow); // открыть модальное окно
 		$('.b-close, #overlay').on('click', popUpHide); // закрыть модальное окно
 		$('#add-new-project').on('submit', addProject); // добавление проекта
 	},
 
 	popUpShow = function(ev){
-		console.log('Отключаем дефолт у добавить проект');
+		/*console.log('Отключаем дефолт у добавить проект');*/
 		ev.preventDefault();
-		console.log($("#new-project-popup"));
-		console.log('Выводим подложку');
+		/*console.log($("#new-project-popup"));
+		console.log('Выводим подложку');*/
 		$("#overlay").removeClass('not-visible').addClass('visible');
 		
-		console.log('Показываем попап');
-		console.log($("#new-project-popup"));
+		/*console.log('Показываем попап');
+		console.log($("#new-project-popup"));*/
 	    $("#new-project-popup").show();
-		console.log($("#new-project-popup"));
+		/*console.log($("#new-project-popup"));*/
 	},
 
 	popUpHide = function(ev){
-		console.log('Отключаем дефолт у сабмит попапа');
-		console.log($("#new-project-popup").width());
+		/*console.log('Отключаем дефолт у сабмит попапа');
+		console.log($("#new-project-popup").width());*/
 		ev.preventDefault();
 
 		$("#overlay").removeClass('visible').addClass('not-visible');
 
-		console.log('Прячем попап');
+		/*console.log('Прячем попап');*/
 		$("#new-project-popup").hide();
 	},
 
@@ -48,5 +48,5 @@ var addProject = (function (){
 
 })();
 
-console.log('Старт выполнения');
+/*console.log('Старт выполнения');*/
 addProject.init();
