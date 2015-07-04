@@ -2,7 +2,7 @@
 var contactMe = (function (){
 
 	var init = function(){
-				console.log('Инициализация модуля contacts');
+				/*console.log('Инициализация модуля contacts');*/
 				setUpListners();
 			},
 
@@ -10,7 +10,7 @@ var contactMe = (function (){
 			$('#form').on('submit', submitForm); // отправка формы "связаться со мной"
 			},
 		submitForm = function (ev) {
-	      	console.log('Работаем с формой связи');
+	      	/*console.log('Работаем с формой связи');*/
 
 	      	ev.preventDefault();
 

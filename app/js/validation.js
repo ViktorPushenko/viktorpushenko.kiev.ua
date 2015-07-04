@@ -5,17 +5,17 @@ var validation = (function (){
 	var
 	
 	init = function() {
-		console.log('Инициализация модуля validation');
+		/*console.log('Инициализация модуля validation');*/
 		_setUpListners();
 	},
 
 	validateForm = function(form) {
-		console.log("validation ");
+		/*console.log("validation ");*/
 
 		form.preventDefault();
 
 		var
-		elements 	= $('form').find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+		elements 	= $('form').find('input, textarea').not('input[type="file"], input[type="hidden"], input[id="captcha"]'),
 		valid 		= true;
 
 		$.each(elements, function(index, val) {
@@ -36,19 +36,19 @@ var validation = (function (){
 	// ------------------------------------- PRIVATE FUNCTIONS -------------------------------------
 	var 
 	_setUpListners = function() {
-		console.log('Установка слушателей');
+		/*console.log('Установка слушателей');*/
 		$('form').	on('submit', validateForm).
 					on('keydown', '.has-error', _removeError).
 					on('reset', _clearForm);
 	},
 	
 	_removeError = function(form) {
-		console.log("removing errors");
+		/*console.log("removing errors");*/
 		$(this).removeClass('has-error');
 	},
 
 	_clearForm = function(form) { // Очищает форму 
-	      console.log('Очищаем форму');
+	      /*console.log('Очищаем форму');*/
 
 	      var form = $(this);
 	      form.find('.input, .textarea').trigger('hideTooltip'); // удаляем тултипы
@@ -57,7 +57,7 @@ var validation = (function (){
 	    }
 
 	_createTooltip = function (element, position) { // Создаёт тултипы
-	      console.log('Создаем тултип');
+	      /*console.log('Создаем тултип');*/
 
 	      // позиция тултипа
 	      if (position === 'right') {

@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="fonts/proxima/proxima.css">
 
 	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
-	
+
 	<link href="/img/favicon.ico" rel="shortcut icon">
 	<script type="text/javascript" src="js/modernizr.js"></script>
 </head>
@@ -129,8 +129,12 @@
 											<span class="form-text">Введите код, указанный на картинке</span>
 										</div>
 										<div class="captcha-container">
-											<input type="text" class="captcha" name="captcha" id="captcha">
-											<!-- <input type="text" class="input input-last" name="code" id="code" placeholder="Введите код"> -->
+											<div class="form-col">
+												<input type="text" class="captcha" name="captcha" id="captcha">
+											</div>
+											<div class="form-col-2-2">
+												<input type="text" class="input input-last" name="code" id="code" placeholder="Введите код" qtip-content="Вы не ввели код проверки" qtip-position="right">
+											</div>
 
 										</div>
 										<div class="form-line button-group clearfix">
@@ -167,7 +171,7 @@
 	<!-- footer-->
 
 	<!-- vendor JS -->
-    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
 	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/placeholders.min.js"></script>
 	<!-- JS -->
