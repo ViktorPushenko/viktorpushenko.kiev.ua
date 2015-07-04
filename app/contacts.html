@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="css/sprite.css">
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="stylesheet" href="fonts/proxima/proxima.css">
+
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
+	
 	<link href="/img/favicon.ico" rel="shortcut icon">
 	<script type="text/javascript" src="js/modernizr.js"></script>
 </head>
@@ -101,22 +104,26 @@
 							</div>
 
 							<div class="form-wrapper clearfix">
-								<form action="contacts.php" class="form">
+								<!-- <form action="contacts.php" class="form"> -->
+								<form class="form">
+									<!-- Вывод сообщений с сервера -->
+		                            <div class="server-message error-message"></div>
+		                            <div class="server-message success-message"></div>
 									<div class="contacts-line">
 										<div class="form-line">
 											<div class="form-col">
 												<label for="name" class="label">Имя</label>
-												<input type="text" class="input" name="name" id="name" placeholder="Как к Вам обращаться">
+												<input type="text" class="input" name="name" id="name" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя">
 											</div>
 											<div class="form-col-2-2">
 												<label for="email" class="label">Email</label>
-												<input type="text" class="input" name="email" id="email" placeholder="Куда мне писать">
+												<input type="text" class="input" name="email" id="email" placeholder="Куда мне писать" qtip-content="Вы не ввели E-mail" qtip-position="right" >
 											</div>
 										</div>
 										
 										<div class="clearfix">
 											<label for="message" class="label">Сообщение</label>
-											<textarea rows="3" class="message input" name="message" id="message" placeholder="Кратко в чем суть"></textarea>
+											<textarea rows="3" class="message input" name="message" id="message" placeholder="Кратко в чем суть" qtip-content="Вы не ввели сообщение" qtip-position="right"></textarea>
 										</div>
 										<div class="clearfix">
 											<span class="form-text">Введите код, указанный на картинке</span>
@@ -160,7 +167,12 @@
 	<!-- footer-->
 
 	<!-- vendor JS -->
-    <script src="js/placeholders.min.js"></script>
+    <script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
+	<script src="js/placeholders.min.js"></script>
+	<!-- JS -->
+	<script src="js/validation.js"></script>
+	<script src="js/contacts.js"></script>
     
 </body>
 </html>

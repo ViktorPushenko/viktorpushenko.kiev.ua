@@ -1,0 +1,60 @@
+// Модуль связаться со мной 
+var contactMe = (function (){
+
+	var init = function(){
+				console.log('Инициализация модуля contacts');
+				setUpListners();
+			},
+
+		setUpListners = function (){
+			$('#form').on('submit', submitForm); // отправка формы "связаться со мной"
+			},
+		submitForm = function (ev) {
+	      	console.log('Работаем с формой связи');
+
+	      	ev.preventDefault();
+
+	      	var form = $(this),          
+	          	url = '/send_mail.php',
+	          	defObject = ajaxForm(form, url);
+
+	      	if (defObject) {
+	        	
+	        	defObject.done(function(ans) {
+	          	
+	          	var mes = ans.mes,
+	            	status = ans.status;
+
+		        if ( status === 'OK'){
+		            form.trigger('reset');
+		            form.find('.success-mes').text(mes).show();           
+		        } else{
+		            form.find('.error-mes').text(mes).show();
+		        }
+	        });
+	      }
+	    },
+
+	    ajaxForm = function (form, url) {
+      
+	      	if (!validation.validateForm(form)) return false;  // Возвращает false, если не проходит валидацию 
+	    	var data = form.serialize(); // собираем данные из формы в объект data
+
+	      	return $.ajax({ // Возвращает Deferred Object
+		        type: 'POST',
+		        url: url,
+		        dataType : 'JSON',
+		        data: data })
+	      		.fail( function(ans) {
+			        console.log('Проблемы в PHP');
+			        form.find('.error-mes').text('На сервере произошла ошибка').show();
+		      	});
+	    };   
+
+	return {
+		init: init
+	};
+
+})();
+
+contactMe.init();
